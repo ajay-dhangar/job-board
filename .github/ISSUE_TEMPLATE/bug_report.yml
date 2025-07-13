@@ -1,0 +1,52 @@
+name: 🐛 Bug Report
+description: Report an issue or unexpected behavior in the Job Board project
+title: "[BUG] <describe your issue>"
+labels: [bug]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill in the details below.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the issue and what you expected to happen.
+      placeholder: "When I clicked 'Apply', nothing happened..."
+    validations:
+      required: true
+
+  - type: input
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: "1. Go to '/jobs' → 2. Click 'Apply' → 3. See error"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Where did this issue occur?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots or Console Logs
+      description: If applicable, add screenshots or paste any error messages here.
+      placeholder: "Paste logs or attach screenshots..."
+    validations:
+      required: false
