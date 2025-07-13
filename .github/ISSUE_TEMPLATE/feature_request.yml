@@ -1,0 +1,48 @@
+name: ✨ Feature Request
+description: Suggest an idea or feature for the Job Board project
+title: "[FEATURE] <your suggestion>"
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your suggestion! Please share your idea below.
+
+  - type: input
+    id: feature-title
+    attributes:
+      label: Feature Title
+      placeholder: "Dark Mode Toggle for Dashboard"
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature and how it helps users.
+      placeholder: "I want users to be able to switch between light and dark themes."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-ideas
+    attributes:
+      label: Suggested Implementation
+      description: (Optional) Do you have any ideas on how to implement it?
+      placeholder: "We can use Tailwind's `dark` class and Context API..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: false
