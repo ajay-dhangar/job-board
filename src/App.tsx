@@ -6,6 +6,9 @@ import Footer from './components/Layout/Footer';
 import Home from './pages/Home';
 import Jobs from './pages/Jobs';
 import JobDetail from './pages/JobDetail';
+
+import Companies from './pages/Companies';
+import CompanyDetail from './pages/CompanyDetail';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import EmployerDashboard from './pages/EmployerDashboard';
@@ -31,7 +34,9 @@ const App: React.FC = () => {
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/jobs" element={<Jobs />} />
-                  <Route path="/jobs/:id" element={<JobDetail />} />
+                  <Route path="/jobs/:id" element={<JobDetail />} />                  
+                  <Route path="/companies" element={<Companies />} />
+                  <Route path="/companies/:id" element={<CompanyDetail />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/register" element={<Register />} />
                   <Route path="/employer/dashboard" element={<EmployerDashboard />} />
